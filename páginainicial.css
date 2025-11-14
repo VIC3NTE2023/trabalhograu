@@ -1,0 +1,80 @@
+/* TOPO */
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background-color: rgb(70, 66, 66);
+    height: 100px;
+}
+
+/* LOGO */
+.logo {
+    font-size: 46px;
+    font-weight: bold;
+    color: #ffffff; /* dourado */
+}
+    
+
+
+/* BARRA DE BUSCA */
+.busca {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 550px;
+}
+
+.busca input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #7A1E1E;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+    outline: none;
+    background: #F2E8E8;
+}
+
+.busca button {
+    background: #E7C75F;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* MENU DIREITA */
+.menu-direita a {
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 850px) {
+    .menu-direita a {
+        font-size: 14px;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .menu-direita {
+        display: none; /* Ativo menu móvel depois se quiser */
+    }
+
+    .busca input {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+}
